@@ -19,5 +19,13 @@ module.exports = {
         }
       }
     ]
+  },
+  devServer: {
+    static: {
+      directory: path.resolve(__dirname, 'index'), // 指定静态文件目录
+    },
+    compress: true, // 启用 gzip 压缩
+    port: 8080, // 端口号
+    open: true, // 自动打开浏览器
   }
 };
